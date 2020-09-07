@@ -15,18 +15,22 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+      <!--  don't use id's, use classes-->
     <div id="big">
+      <!-- use calasses instead of id's, u can't have more then 1 id on a page with same name -->
       <header id="header">
         <div class="sign">
           <div class="container">
             <div class="sing-icons">
               <a href="#">
+                  <!-- in general alt text describe the image -->
                 <img src="img/top_icon.png" alt="top_icon" />
               </a>
             </div>
             <div class="sign-right">
               <a href="#" class="signIn">
                 <img src="img/account_circle.png" alt="account_circle" />
+                  <!-- not valid code, don't use <p> inside anchor link, use <span>-->
                 <p class="signIn-text">sign in</p>
               </a>
               <hr class="hr" />
@@ -36,6 +40,7 @@
                   src="img/language.png"
                   alt="language"
                 />
+<!--                add more option for language switcher, otherwise it doesn't make sence to have it-->
                 <select class="select-leng" name="hero[]">
                   <option value="#">ENG</option>
                 </select>
@@ -118,6 +123,7 @@
                 </a>
               </li>
             </ul>
+<!--            it should be a list as well -->
             <div class="menu-icons">
               <a href="#">
                 <img src="img/search_ico.png" alt="search_ico" />
@@ -171,9 +177,11 @@
           </div>
         </div>
       </header>
+      dont use id's, use classes, u have same id on this page somewhere else
       <section id="sort">
         <div class="container">
           <ul>
+<!--            not valid code, u can't use h2 inside the list in this way -->
             <h2 class="sort-title">sort blog:</h2>
             <li><button class="sort-btn active">all</button></li>
             <li><button class="sort-btn">photography</button></li>
@@ -183,6 +191,7 @@
           </ul>
         </div>
       </section>
+      <!--            not valid code, u can't use h2 inside the list in this way -->
       <section id="all">
         <div class="container">
           <div class="all-post">
@@ -242,6 +251,7 @@
                 <img class="more_vert" src="img/more_vert.png" alt="more_vert" />
               </div>
             </div>
+<!--            it is the same component like post-1 don't use  that specific naming and probably u dont need to have post1,post-2,post-n, you need only post component-->
             <div class="post-2">
               <div class="video">
                 <img class="all_2" src="img/all_2.jpg" alt="all_2" />
@@ -716,6 +726,7 @@
               <a class="more-btn" href="#"> </a>
             </div>
           </div>
+<!--          use aside tag for this block-->
           <div class="all-nav">
             <div class="container">
               <div class="all-nav__search">
@@ -775,6 +786,7 @@
                   <hr />
                 </div>
                 <div class="all-nav_subcribe-icon">
+<!--                  it could be a list <ul>-->
                   <div class="social-icon">
                     <img href="#" src="img/f.png" alt="f" />
                     <img href="#" src="img/twit.png" alt="twit" />
@@ -836,6 +848,7 @@
               </div>
               <div class="tags">
                 <h3 class="all-na_titles">tags</h3>
+<!--                use list tag-->
                 <div class="tags-text">
                   <a class="tags-text_w">
                     Photography
@@ -891,6 +904,7 @@
         <div class="container">
           <div class="pages-widget">
             <ul>
+<!--              not valid code, don't use h2 iside the list tag-->
               <h2 class="pages-widgettitle">pages widget</h2>
               <li>
                 <div class="home">
@@ -1010,6 +1024,7 @@
             </div>
             <div class="social">
               <h2 class="ocial-title">Social widget</h2>
+<!--              use list tag -->
               <div class="social-icon">
                 <img href="#" src="img/f.png" alt="f" />
                 <img href="#" src="img/twit.png" alt="twit" />
@@ -1022,6 +1037,7 @@
           </div>
           <div class="flickr">
             <h2 class="flickr-title">flickr widget</h2>
+            <!--              use list tag -->
             <div>
               <img class="flickr-img" src="img/flickr_1.jpg" alt="flickr" />
               <img class="flickr-img" src="img/flickr_2.jpg" alt="flickr" />
@@ -1059,6 +1075,7 @@
             <ul class="menu-list">
               <li>
                 <a class="active" href="#">
+<!--                  use span insted of p tag-->
                   <p>home</p>
                 </a>
               </li>
@@ -1102,6 +1119,7 @@
           </div>
           <div class="language">
             <img class="language-icon" src="img/language.png" alt="language" />
+<!--            add more options-->
             <select class="select-leng" name="hero[]">
               <option value="#">ENG</option>
             </select>
@@ -1109,7 +1127,9 @@
         </div>
       </footer>
     </div>
+<!--      don't use id's-->
     <div id="little">
+<!--      u can't have headers on a page-->
       <header id="header">
         <div class="sign">
           <div class="container">
@@ -1120,6 +1140,7 @@
                   src="img/language.png"
                   alt="language"
                 />
+<!--                add more options-->
                 <select class="select-leng" name="hero[]">
                   <option value="#">ENG</option>
                 </select>
@@ -1821,6 +1842,8 @@
           
         </div>
       </section>
+<!--      u can't have 2 footers on a page -->
+<!--      don't use id's-->
       <footer id="footer">
         <div class="container">
           <div class="footer-img">

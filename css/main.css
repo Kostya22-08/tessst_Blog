@@ -1,3 +1,9 @@
+/*
+ please try to use LESS or SCSS here with BEM class naming
+
+ don't use any numbers in naming
+ try to reuse classes as much as possible
+*/
 body {
   margin: 0;
   padding: 0;
@@ -384,6 +390,29 @@ li {
 .all_4 {
   background: url(../img/all_4.jpg) center;
 }
+
+/*
+u don't need all this post-1,post-2,post-n
+u need post selector and reuse it
+also u can add some modifier class names if you need
+
+
+something like this with BEM and LESS
+<div class="post post__tittle post--red" />
+
+.post {
+  margin: 10px;
+
+  &__tittle {
+    font-size: 20px;
+  }
+
+  &--red {
+    background: red;
+  }
+}
+
+*/
 .post-2 .videotext-title,
 .post-3 .videotext-title,
 .post-4 .videotext-title {
